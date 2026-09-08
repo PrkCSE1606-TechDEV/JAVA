@@ -4,7 +4,7 @@ class Test
     float y, sum;
     public void Addition(int a, float b)
     {
-        float sum = a+b;
+        this.sum = a+b;
     }
     public void display(Test obj)
     {
