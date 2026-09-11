@@ -15,7 +15,8 @@ class Student
     }
     public static void main(String[] args)
     {
-        Student std = new Student();
+        System.out.println(Student.b); // Access static variable using class name.
+        Student std = new Student(); // Access static method using object reference.
         std.display();
         change();
     }
