@@ -22,7 +22,9 @@ class ConstructorDemo
     { 
         ConstructorDemo cd = new ConstructorDemo();
         ConstructorDemo obj = new ConstructorDemo(5, 6);
-    }  
+        System.out.println(cd.a);
+        System.out.println(obj.a);
+    }
 }
 
 /* In this program in lines 23 and 24 there is yellow hilighting over cd and obj 
