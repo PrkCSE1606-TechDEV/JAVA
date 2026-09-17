@@ -11,11 +11,35 @@
    abstract.
 */
 
+
 abstract class Shape
 {
-    abstract public void draw(); // Abstract method without a body. It must be implemented by subclasses.
-    
+    abstract public void action(); // Abstract method declaration. It must be implemented by subclasses.
+    public void display() // Concrete method with a body. It can be used by subclasses.
+    {
+        System.out.println("In the display method.");
+    }
+    abstract public void draw(); // Abstract method declaration. It must be implemented by subclasses.
 }
-class Demo2 {
-    
+class Rectangle extends Shape
+{
+    public void action()
+    {
+        System.out.println("Rectangle");
+    }
+
+    public void draw() // Implementation of the abstract method from the Shape class.
+    {
+        System.out.println("Draw a Rectangle");
+    }
+}
+class Demo2 
+{
+    public static void main(String[] args) 
+    {
+        Rectangle rectangle = new Rectangle();
+        rectangle.display();
+        rectangle.action();
+        rectangle.draw();
+    }
 }
